@@ -79,10 +79,7 @@
     cursor: pointer;
     width: 18px !important;
     line-height: 1em;
-    display: inline-block;
-    background-size: cover !important;
-    background-position: center !important;
-    object-fit: cover;
+    @include commonStyles();
 }
 
 .config-icon {
@@ -91,10 +88,7 @@
     width: 18px !important;
     cursor: pointer;
     line-height: 1em;
-    display: inline-block;
-    background-size: cover !important;
-    background-position: center !important;
-    object-fit: cover;
+    @include commonStyles();
 }
 
 .report-icon {
@@ -103,10 +97,7 @@
     width: 18px !important;
     line-height: 1em;
     cursor: pointer;
-    display: inline-block;
-    background-size: cover !important;
-    background-position: center !important;
-    object-fit: cover;
+    @include commonStyles();
 }
 
 .etl-icon {
@@ -115,10 +106,7 @@
     width: 18px !important;
     cursor: pointer;
     line-height: 1em;
-    display: inline-block;
-    background-size: cover !important;
-    background-position: center !important;
-    object-fit: cover;
+    @include commonStyles();
 }
 
 .arrow-icon {
@@ -126,11 +114,8 @@
     height: 18px !important;
     width: 18px !important;
     line-height: 1em;
-    display: inline-block;
+    @include commonStyles();
     cursor: pointer;
-    background-size: cover !important;
-    background-position: center !important;
-    object-fit: cover;
 }
 
 .region-icon {
@@ -139,12 +124,9 @@
     width: 22px !important;
     line-height: 1em;
     margin: 0px 8px;
-    display: inline-block;
-    background-size: cover !important;
-    background-position: center !important;
-    object-fit: cover;
     cursor: pointer;
     border-radius: 50%;
+    @include commonStyles();
 }
 
 .notification-icon {
@@ -153,10 +135,7 @@
     width: 22px !important;
     line-height: 1em;
     margin: 0px 8px;
-    display: inline-block;
-    background-size: cover !important;
-    background-position: center !important;
-    object-fit: cover;
+    @include commonStyles();
     cursor: pointer;
     border-radius: 50%;
 }
@@ -167,12 +146,8 @@
     width: 24px !important;
     line-height: 1em;
     margin: 0px 5px;
-    display: inline-block;
     cursor: pointer;
-    background-size: cover !important;
-    background-position: center !important;
-    object-fit: cover;
-    border-radius: 50%;
+    @include commonStyles();
 }
 
 .rocket-icon {
@@ -181,10 +156,7 @@
     width: 40px !important;
     margin-inline-end: 10px;
     line-height: 1em;
-    display: inline-block;
-    background-size: cover !important;
-    background-position: center !important;
-    object-fit: cover;
+    @include commonStyles();
 }
 
 .toggle {
@@ -204,10 +176,7 @@
     width: 18px !important;
     margin: auto;
     line-height: 1em;
-    display: inline-block;
-    background-size: cover !important;
-    background-position: center !important;
-    object-fit: cover;
+    @include commonStyles();
 }
 .arrow-up-icon {
     background: url("/assets/icons/caret-up-fill.svg") no-repeat;
@@ -215,10 +184,7 @@
     width: 18px !important;
     margin: auto;
     line-height: 1em;
-    display: inline-block;
-    background-size: cover !important;
-    background-position: center !important;
-    object-fit: cover;
+    @include commonStyles();
 }
 
 .icons {
@@ -300,4 +266,10 @@
     color: #ffffff;
     padding: 0px !important;
     min-width: auto !important;
+}
+@mixin commonStyles() {
+    display: inline-block;
+    background-size: cover !important;
+    background-position: center !important;
+    object-fit: cover;
 }
