@@ -7,6 +7,12 @@
 .container {
     border: 1px solid grey;
 }
+@mixin commonItems() {
+    display: inline-block;
+    background-size: cover !important;
+    background-position: center !important;
+    object-fit: cover;
+}
 
 .header,
 .footer {
@@ -79,7 +85,7 @@
     cursor: pointer;
     width: 18px !important;
     line-height: 1em;
-    @include commonStyles();
+    @include commonItems();
 }
 
 .config-icon {
@@ -88,7 +94,7 @@
     width: 18px !important;
     cursor: pointer;
     line-height: 1em;
-    @include commonStyles();
+    @include commonItems();
 }
 
 .report-icon {
@@ -97,7 +103,7 @@
     width: 18px !important;
     line-height: 1em;
     cursor: pointer;
-    @include commonStyles();
+    @include commonItems();
 }
 
 .etl-icon {
@@ -106,7 +112,7 @@
     width: 18px !important;
     cursor: pointer;
     line-height: 1em;
-    @include commonStyles();
+    @include commonItems();
 }
 
 .arrow-icon {
@@ -114,7 +120,7 @@
     height: 18px !important;
     width: 18px !important;
     line-height: 1em;
-    @include commonStyles();
+    @include commonItems();
     cursor: pointer;
 }
 
@@ -126,7 +132,7 @@
     margin: 0px 8px;
     cursor: pointer;
     border-radius: 50%;
-    @include commonStyles();
+    @include commonItems();
 }
 
 .notification-icon {
@@ -135,7 +141,7 @@
     width: 22px !important;
     line-height: 1em;
     margin: 0px 8px;
-    @include commonStyles();
+    @include commonItems();
     cursor: pointer;
     border-radius: 50%;
 }
@@ -147,7 +153,7 @@
     line-height: 1em;
     margin: 0px 5px;
     cursor: pointer;
-    @include commonStyles();
+    @include commonItems();
 }
 
 .rocket-icon {
@@ -156,7 +162,7 @@
     width: 40px !important;
     margin-inline-end: 10px;
     line-height: 1em;
-    @include commonStyles();
+    @include commonItems();
 }
 
 .toggle {
@@ -176,7 +182,7 @@
     width: 18px !important;
     margin: auto;
     line-height: 1em;
-    @include commonStyles();
+    @include commonItems();
 }
 .arrow-up-icon {
     background: url("/assets/icons/caret-up-fill.svg") no-repeat;
@@ -184,7 +190,7 @@
     width: 18px !important;
     margin: auto;
     line-height: 1em;
-    @include commonStyles();
+    @include commonItems();
 }
 
 .icons {
@@ -266,10 +272,4 @@
     color: #ffffff;
     padding: 0px !important;
     min-width: auto !important;
-}
-@mixin commonStyles() {
-    display: inline-block;
-    background-size: cover !important;
-    background-position: center !important;
-    object-fit: cover;
 }
